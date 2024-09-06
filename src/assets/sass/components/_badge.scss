@@ -1,0 +1,26 @@
+.badge-gray {
+    background-color: #fce9e9;
+    color: var(--clr-base);
+    font-weight: 600;
+    font-size: 14px;
+    display: inline-flex;
+    column-gap: .625em;
+    padding: .5em 1.25em;
+    align-items: center;  
+    [class^=icon-] {
+        font-size: 17px;
+        color: #d13536; 
+    }
+    @media #{$max_lg}{
+        font-size: 13px;  
+        [class^=icon-]{
+            font-size: 15px; 
+        }
+    }
+} 
+.active-status {
+    background-color: #0bb751;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+}  

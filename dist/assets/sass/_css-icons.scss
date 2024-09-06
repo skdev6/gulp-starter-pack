@@ -1,0 +1,26 @@
+.angle__down{
+    font-size: 14px;
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 1.375em;
+    height: 1.375em;
+    border:0.14285714285714285em solid transparent;
+    border-radius: 6.25em;  
+    &::after { 
+        content: ""; 
+        display: block;
+        box-sizing: border-box;
+        position: absolute;
+        width: 0.625em;
+        height: 0.625em;
+        border-bottom:0.14285714285714285em solid;
+        border-right:0.14285714285714285em solid;
+        transform: rotate(45deg);
+        left: 0.25em; 
+        top:0.14285714285714285em;
+      }
+}
+.icon-arow-long-right {
+  margin-bottom: .3em;
+}  

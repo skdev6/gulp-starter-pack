@@ -1,0 +1,30 @@
+.bg-dark{
+    background-color: var(--dark-clr);
+} 
+.bg-gray-blue{
+    background-color: #f6f9fc;
+}
+.text-gray{
+    color: rgba(13,13,13, .5);  
+} 
+.bg-deep{
+    background-color: var(--clr-deep);
+}
+.bg-primary-alpha{
+    background-color: var(--clr-primary-alpha);
+}
+.text-primary-alpha{
+    color: var(--clr-primary-alpha);
+}  
+.text__primary{
+    color: var(--clr-primary); 
+}
+.text__secondary{
+    color: var(--clr-secondary);  
+}
+.text-deep{
+    color: var(--clr-deep);
+} 
+// .text-danger{
+//     color: #d13536 !important; 
+// }

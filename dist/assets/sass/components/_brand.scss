@@ -1,0 +1,7 @@
+.brand__wrapper {
+    display: flex;
+    @media #{$max_sm}{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    } 
+}

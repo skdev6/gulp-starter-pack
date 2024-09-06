@@ -1,0 +1,161 @@
+@import url('../webfonts/stylesheet.css'); 
+@import url('../webfonts/icon/icon.min.css');  
+body,html { 
+	padding: 0;
+	margin: 0;
+	font-size: 19px;
+	line-height:33px; 
+	color:var(--clr-base);  
+	font-family: var(--ff-base); 
+	background:#fff;   
+	@media #{$max_lg}{
+		font-size: 14px; 
+		line-height: 24px;  
+	}
+}
+.text-18{   
+	@media #{$lg}{
+		font-size: 18px;
+	}
+}  
+.title-base{
+	font-size: 19px;
+	line-height:145%;  
+	font-family: var(--ff-base); 
+	@media #{$max_lg}{
+		font-size: 14px;  
+	}
+}
+a { 
+	color: var(--clr-primary); 
+	&:hover{
+		color: var(--clr-primary);
+	}
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	color: var(--clr-base);
+	font-family: var(--ff-base);  
+	line-height: 110%;  
+	font-weight:600;
+	a {
+		color: currentColor; 
+		&:hover {
+			color: var(--clr-secondary); 
+		}
+	}
+}
+.title-xl{   
+	font-size:48px;
+	line-height: 51px; 
+	@media #{$max_lg}{ 
+		font-size:23px;
+		line-height: 32px;
+	}
+}
+.title-lg{     
+	font-size:40px;
+	line-height: 51px; 
+	@media #{$max_lg}{ 
+		font-size:23px;
+		line-height: 32px;
+	}
+}
+.title-md{     
+	font-size:30px;
+	line-height: 50px; 
+	@media #{$max_lg}{ 
+		font-size: 21px;
+        line-height: 28px; 
+	}
+}
+h1,.title-h1 {  
+	font-size:44px; 
+	@media #{$max_lg}{ 
+		font-size:20px;
+		line-height:28px;  
+	}
+}
+h2,.title-h2 {
+	font-size:35px;  
+	@media #{$max_lg}{ 
+		font-size:22px; 
+	}
+}
+h3,.title-h3,.sub-heading{
+	font-size:23px; 
+	line-height: 33px; 
+	@media #{$max_lg}{ 
+		font-size:17px; 
+		line-height: 26px; 
+	}
+}
+.sub-heading{
+	font-weight: normal; 
+}
+.sm-heading{
+	line-height: 18px;
+	font-weight: 600; 
+}
+
+h4,.title-h4 {
+	font-size: 1.5rem;
+	@media #{$max_lg}{ 
+		font-size:2.285rem;
+	}
+} 
+h5,.title-h5 {
+	font-size: 1.5rem;
+	@media #{$max_lg}{ 
+		font-size: 1.71rem;
+	}
+}
+h6,.title-h6 { 
+	font-size: 1rem; 
+} 
+small,.text-small{
+	font-size: 57%;    
+}
+.ls-10{
+	letter-spacing: 10px; 
+}
+.ls-2{
+	letter-spacing: 2px;
+}
+.ff-base{
+	font-family: var(--ff-2); 
+} 
+.ff-heading{
+	font-family: var(--ff-1);  
+}
+.text-sm{
+	font-size: 16px; 
+}
+.fw-100{font-weight: 100;}
+.fw-200{font-weight: 200;}
+.fw-200{font-weight: 200;}
+.fw-400{font-weight: 400;}
+.fw-500{font-weight: 500;}
+.fw-600{font-weight: 600;}
+.fw-700{font-weight: 700;} 
+.fw-bold{font-weight: bold;} 
+.fw-800{font-weight: 800;}
+.fw-900{font-weight: 900;}  
+
+.icon-icon-phone::before {
+    font-size: 1.2em;
+}
+.icon-icon-tamp::before {
+    font-size: 1.3em;
+} 
+.icon-icon-location::before {
+    font-size:1.24em;
+}  
+.underline-primary{
+	position: relative;
+}

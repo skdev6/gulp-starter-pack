@@ -1,0 +1,127 @@
+.sk-accordion-wrapper{
+    .accordion-item{
+        background-color: #fff; 
+        margin-bottom: 14px; transition: all .25s;
+        .title{
+            font-size: 19px;
+            line-height: 22px;
+            position: relative;
+            font-weight: 600; 
+            margin: 0; 
+            padding:20px 30px;
+            cursor: pointer; 
+            padding-right: 60px;
+            border: 2px solid #ccd4d8;
+            transition: all .25s; 
+            border-radius: 10px; 
+            @media #{$max_lg}{
+                font-size: 14px;
+                line-height: 19px;
+                padding:15px 20px;
+            }
+            .icon { 
+                display: block;
+                height: 1.625em;
+                width: 1.625em;
+                border: 0.125em solid currentColor;
+                border-radius: 50%;
+                position: absolute;
+                top: 50%;
+                right: 40px;
+                transform: translateY(-50%); 
+                color:var(--clr-primary);
+                font-size: 15px; 
+                @media #{$max_lg}{
+                    font-size: 13px;
+                    right: 23px;
+                }
+                &::before,&::after {
+                    content: "";
+                    position: absolute;
+                    height: 0.125em;
+                    width: 0.75em;
+                    background-color: currentColor;
+                    top: 0.6875em;  
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+                &::before {
+                    transform: rotate(90deg) translateX(-50%);
+                    transition: all 0.25s;  
+                    transform-origin: left; 
+                }
+            }            
+        }
+        .accordion-body{
+            display: none; 
+            background-color: #f0f6fc;
+            border-radius: 10px; 
+            .body-content{
+                padding: var(--space-sm);   
+            }
+        }
+    }
+    .active.accordion-item .title,.accordion-con-wrap.active .title,.active.title{   
+           background-color: var(--clr-secondary);
+           color:#fff;
+           border-color: #d13536; 
+            .icon{ 
+                color: currentColor;
+                &::before {
+                    transform: rotate(0) translateX(-50%);
+                }
+            }
+    }
+}  
+// .sk-accordion-wrapper:is(.responsive__accourdion){  
+//     @media #{$max_lg}{     
+//         .accordion-item{
+//             border: 2px solid #e4e9f0;
+//             background-color: #fff; 
+//             margin-bottom: 14px; transition: var(--base-transition); 
+//             .title{
+//                 font-size: 18px;
+//                 line-height: 22px;
+//                 position: relative;
+//                 font-weight: 600; 
+//                 margin: 0; 
+//                 padding:20px 30px;
+//                 cursor: pointer; 
+//                 padding-right: 60px; 
+//                 .icon{
+//                     transition: var(--base-transition);
+//                     position: absolute;right: 23px;top: 50%;transform: translateY(-50%); svg{
+//                         width: 28px; 
+//                         transition: all .15s; 
+//                     svg{
+//                         height: auto;  
+//                     }
+//                         path{
+//                             stroke: var(--base-clr); 
+//                         }
+//                     }
+//                 }
+//             }
+//             .accordion-body{
+//                 font-size: 14px;
+//                 line-height: 20px; 
+//                 display: none; 
+//                 .body-content{
+//                     padding-bottom: 25px; 
+//                     padding-left: 30px; 
+//                     padding-right: 30px;   
+//                 }
+//             }
+//         }
+//         .active.accordion-item{
+//             .title{
+//                 .icon{
+//                     transform: translateY(-50%) rotate(180deg);  
+//                 }
+//             }
+//         }
+//     }
+// }
+// .accordion-item .title .icon svg {
+//     height: auto;
+// } 

@@ -1,0 +1,108 @@
+.suppli-table thead th, .suppli-table tbody td {
+    font-size: 20px;
+    padding: 25px 50px;
+    font-weight: 600;
+    margin: 0;
+    @media #{$max_lg}{ 
+        font-size: 15px;
+        font-weight: 600;
+    }
+    @media #{$max_md}{ 
+        padding: 13px 15px; 
+    }
+}  
+.suppli-table thead th{
+    border: none; 
+}
+.suppli-table thead th{
+    background-color:var(--clr-deep);
+    color: #fff;
+}
+.suppli-table{
+    th, td{
+        &:first-child{
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px; 
+        }
+        &:last-child{
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+    }
+    // td{
+    //     background-color: #fff; 
+    //     border: 2px solid #ccd4d8;    
+    // }
+}
+
+.suppli-table tbody td .product-img img {
+    max-width: 120px;
+    @media #{$max_md}{ 
+        max-width: 70px; 
+    }
+}  
+.suppli-table tbody td { 
+    color: #201d1d; 
+    @media #{$max_md}{ 
+        padding: 13px 15px; 
+    }
+}
+
+// .suppli-table tbody td:first-child {
+//     border-left: 1px solid;
+// }
+
+// .suppli-table tbody td:last-child {
+//     border-right: 1px solid;
+// }
+
+// .suppli-table tbody td, .suppli-table tbody td:first-child,.suppli-table tbody td:last-child {
+//     border-color: #f3f3f3;
+// }   
+.suppli-table{
+    width: 100%;
+    overflow-x: auto; 
+}
+.suppli-table table {
+    min-width: 100%;
+} 
+.suppli__table{
+    width: 100%;
+    overflow-x: auto; 
+    .thead{
+        .tr{
+            background-color:var(--clr-deep);
+            color: #fff;   
+            margin-bottom:20px;          
+        }
+    }
+    .tr{
+        align-items: center; 
+        display:inline-grid; 
+        grid-template-columns: 250px auto 170px;  
+        border-radius: 10px;   
+        padding: 0 60px;
+        width: 100%; 
+        @media #{$max_lg}{
+            padding: 0 30px;  
+            grid-template-columns: 200px auto 140px;  
+        }
+        @media #{$max_sm}{ 
+            grid-template-columns:150px 200px 100px;    
+        }
+    }
+    .td,.th{
+        padding:20px;      
+        font-weight: 600; 
+        &:last-child{padding-right: 0; } 
+        
+    }
+    .tbody{
+        .tr{
+            background-color:#fff;
+            color:var(--clr-base);  
+            border:2px solid #ccd4d8; 
+            margin-top: 10px;  
+        }
+    }
+}
